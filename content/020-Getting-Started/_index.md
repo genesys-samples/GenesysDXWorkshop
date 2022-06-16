@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "Use Case 1"
 chapter: true
 weight: 20
 ---

@@ -1,5 +1,5 @@
 ---
-title: "First Lesson"
+title: "Chat and Chat Bots"
 chapter: false
 weight: 10
 ---
