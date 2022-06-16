@@ -15,4 +15,3 @@ In this workshop you will learn to apply your foundational knowledge of [Genesys
 - Creating users and groups.
 - Configure security.
 
-hello this is a branch test
