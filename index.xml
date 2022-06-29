@@ -12,10 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/020-getting-started/10_first.html</guid>
-      <description>Configure Workshop   Step one
-  Step two
-  Step three
-  </description>
+      <description>Configure Workshop As the industry’s most tightly integrated support team and bot solution, Genesys DX uses AI to help your team be more effective and efficient, unburden employees from repetitive tasks, and provide seamless transitions from bots to live human support. It’s the best of both worlds.
+Tying in the DX AI-powered knowledge bases enables you to build sophisticated knowledge that can be intelligently searched using APIs. In other words, you can author knowledge using the knowledge base so that it can be surfaced intelligently to customers via interaction with the bot flows.</description>
     </item>
     
     <item>
@@ -38,18 +36,6 @@
     
     <item>
       <title>Configuration</title>
-      <link>/020-getting-started/20_second.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/020-getting-started/20_second.html</guid>
-      <description>Advanced Lesson   Step one
-  Step two
-  Step three
-  </description>
-    </item>
-    
-    <item>
-      <title>Configuration</title>
       <link>/030-use-case-2/20_second.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -64,6 +50,38 @@
       
       <guid>/040-use-case-2-copy/20_second.html</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Knowledge bases</title>
+      <link>/020-getting-started/20_second.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020-getting-started/20_second.html</guid>
+      <description>Knowledgebase Configuration Genesys DX knowledge base enables a knowledge author to create and manage knowledge, view knowledge performance, and provide feedback to train knowledge services. The knowledge base enhances the customer’s self-service experience and increases performance for agents who respond to customer inquiries.
+You can create and maintain a knowledge base of questions and answers. When a user asks a question, Genesys DX AI looks for a similar question in the Knowledge Base.</description>
+    </item>
+    
+    <item>
+      <title>Bots</title>
+      <link>/020-getting-started/30_third.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020-getting-started/30_third.html</guid>
+      <description>Bot Flow Setup Bot flows are the orchestrator of our self service offerings and are where we will tie our knowledgebase together with bot functionality.
+Within Architect you will hover over flows and select Digital Bot Flow and Add. Using the same best practice of meaningful names and descriptions you will create a new Bot Flow
+Bots are comprised of 2 primary components - Intents
+ Intents are ultimately what you are expecting your bot to be able to assist with, such as providing account information or loan information.</description>
+    </item>
+    
+    <item>
+      <title>Message Flows</title>
+      <link>/020-getting-started/40_fourth.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020-getting-started/40_fourth.html</guid>
+      <description>With our Knowledgebase and Bot constructed, it is time to tie all of the work together with a simple message flow
+Construct your Queue  Queues are logical groupings of agents for routing purposes, these are often paired with ACD skills for more refined interaction routing. The easiest way to differentiate queue&amp;rsquo;s and ACD skills is to think of a Billing Queue as being the list of all of your agents that handle billing inquiries.</description>
     </item>
     
   </channel>

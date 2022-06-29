@@ -8,7 +8,7 @@
 <meta name="author" content="Genesys">
 
     <link rel="icon" href="https://developer.genesys.com/wp-content/uploads/2020/07/Genesys_Favicon.ico" type="image/x-icon" />
-    <title>Email :: Documentation for Hugo Learn Theme</title>
+    <title>Message Flows :: Documentation for Hugo Learn Theme</title>
 
     
     <link href="../css/nucleus.css?1656516504" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../030-use-case-2/10_first.html">
+  <body class="" data-url="../020-getting-started/40_fourth.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -105,7 +105,7 @@
   
     
     <li data-nav-id="/020-getting-started.html" title="Use Case 1" class="dd-item
-        
+        parent
         
         
         ">
@@ -196,7 +196,7 @@
  
   
     
-      <li data-nav-id="/020-getting-started/40_fourth.html" title="Message Flows" class="dd-item ">
+      <li data-nav-id="/020-getting-started/40_fourth.html" title="Message Flows" class="dd-item active">
         <a href="../020-getting-started/40_fourth.html">
         Message Flows
         <i class="fas fa-check read-icon"></i>
@@ -225,7 +225,7 @@
   
     
     <li data-nav-id="/030-use-case-2.html" title="Use Case 2" class="dd-item
-        parent
+        
         
         
         ">
@@ -253,7 +253,7 @@
  
   
     
-      <li data-nav-id="/030-use-case-2/10_first.html" title="Email" class="dd-item active">
+      <li data-nav-id="/030-use-case-2/10_first.html" title="Email" class="dd-item ">
         <a href="../030-use-case-2/10_first.html">
         Email
         <i class="fas fa-check read-icon"></i>
@@ -441,7 +441,7 @@
                   
                     
                     
-                      <option id="en" value="/030-use-case-2/10_first.html" selected>English</option>
+                      <option id="en" value="/020-getting-started/40_fourth.html" selected>English</option>
                     
                   
               
@@ -515,7 +515,7 @@
             
           
           
-            <a href='../'>Genesys DX: When, Why and How</a> > <a href='../030-use-case-2.html'>Use Case 2</a> > Email
+            <a href='../'>Genesys DX: When, Why and How</a> > <a href='../020-getting-started.html'>Use Case 1</a> > Message Flows
           
         
           
@@ -528,7 +528,12 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#construct-your-queue">Construct your Queue</a></li>
+    <li><a href="#construct-your-flow">Construct your Flow</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -544,13 +549,30 @@
           
             <h1>
               
-              Email
+              Message Flows
             </h1>
           
 
         
 
 
+<p>With our Knowledgebase and Bot constructed, it is time to tie all of the work together with a simple message flow</p>
+<h2 id="construct-your-queue">Construct your Queue</h2>
+<blockquote>
+<p>Queues are logical groupings of agents for routing purposes, these are often paired with ACD skills for more refined interaction routing. The easiest way to differentiate queue&rsquo;s and ACD skills is to think of a Billing Queue as being the list of all of your agents that handle billing inquiries. Within that Queue you might have agents that speak spanish, or specialize in collections; ACD skills are tagged to individual interactions to ensure the customer is reaching the agent that most fits their needs (such as spanish).</p>
+</blockquote>
+<p>Within the main administration panel search for &ldquo;queues&rdquo; in the search bar and construct a new queue.
+No additional queue configuration is required, however you can add yourself to this queue in the members tab for later testing.</p>
+<p><img src="../images/queueconstruction.PNG" alt="image"></p>
+<h2 id="construct-your-flow">Construct your Flow</h2>
+<p>Now that our queue has been constructed, we will navigate over to architect by searching for and selecting it from the administration panel</p>
+<p>Once in architect, ensure you are on the correct flow type of &ldquo;Inbound Message&rdquo;, and select Add</p>
+<p><img src="../images/SelectFlowType.PNG" alt="image"></p>
+<p>Provide your flow a name and description that will be clear for future references, select your language and division. Error Event Transfer Queues are not required, however in the event of a logic failure they will allow customers to still reach an agent.</p>
+<blockquote>
+<p>it is best practice to use meaningful names and descriptions to assist colleagues in easily finding and referencing the flow for future work or troubleshooting</p>
+</blockquote>
+<p><img src="../images/CreateFlow.PNG" alt="image"></p>
 
 
 <footer class="footline">
@@ -668,38 +690,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -712,6 +702,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -719,6 +712,35 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -807,10 +829,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../030-use-case-2.html" title="Use Case 2"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../020-getting-started/30_third.html" title="Bots"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../030-use-case-2/20_second.html" title="Configuration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../030-use-case-2.html" title="Use Case 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
