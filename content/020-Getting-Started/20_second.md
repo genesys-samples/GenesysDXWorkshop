@@ -1,42 +1,48 @@
 ---
-title: "Knowledge bases"
+title: "Bots"
 chapter: false
 weight: 20
 ---
 
-## Knowledgebase Configuration
+## Bot Flow Setup
 
-Genesys DX knowledge base enables a knowledge author to create and manage knowledge, view knowledge performance, and provide feedback to train knowledge services. The knowledge base enhances the customer’s self-service experience and increases performance for agents who respond to customer inquiries.
+Bot flows are the orchestrator of our self service offerings and are where we will tie our knowledgebase together with bot functionality.
 
-You can create and maintain a knowledge base of questions and answers. When a user asks a question, Genesys DX AI looks for a similar question in the Knowledge Base. When a similar question is found, the corresponding answer is returned to the user. If the answer is not yet in the knowledge base yet, the user can escalate it to an agent via ticket or chat.
+Within Architect you will hover over flows and select Digital Bot Flow and Add. Using the same best practice of meaningful names and descriptions you will create a new Bot Flow
 
-To create a new knowledge base, follow these steps:
-1. Click Admin. 
-2. Under Knowledge, click Articles.
-3. Click the Knowledge Base list and then click Create Knowledge Base. 
-4. Add a name and an optional description for the knowledge base. 
-5. Select the language in which to gather knowledge content. 
-6. Click Create. The knowledge base opens to the Knowledge Articles page. 
+![image](/images/botflowselect.PNG)
 
-![image](/images/CreateKB.PNG)
+Bots are comprised of 2 primary components - 
+**Intents**
+>Intents are ultimately what you are expecting your bot to be able to assist with, such as providing account information or loan information.
 
-With the knowledge base built, you can now add new question and answer articles, or you can import a previously configured .csv file to create a knowledge base. After you import the file, the system uses the information in the knowledge base to respond to questions. 
-In this workshop we will cover manually adding a new article.
+When adding a new intent you will provide an intent name (such as accountInfo) and map it to a new or existing task
+>Mapping to tasks allows you to break your bot into bite sized portions of functionality to simplify administration and readability. You can use a single task to manage all of your bot functionality if you prefer.
 
-1. Provide a question name
-2. Input content for the answer
->Content is the actual response that the customer will receive if they provide a phrase that matches the article. These can be plain text or include videos and images
-3. Create a list of phrases
->An article might provide an answer to numerous question, or there may be numerous ways to ask the question that the article may answer. Phrases allow you to configure the many possible ways a question answered by this article may be asked. 
-4. Test the article
->This will display the accuracy and actual responses a customer will get back depending on how they ask a question
+![image](/images/addIntent.PNG)
 
-![image](/images/articles.PNG)
+**Utterances**
 
-**Categories and Labels**
-Categories are used to group documents with similar content. For example, you could have a single category for documents that relate to home loans, another category for documents that relate to insurance policies, and so on. When you create documents, you can link them to one category. 
-Where applicable you can also assign Parent Categories, allowing for more refined grouping of articles
+Utterances are what you're expecting a customer to say in order to get the information they need, one customer might say "what is my account balance?", while another might just say "Balance". The more utterances you provide, the more capable your bot will become at understanding what a customer is asking for.
 
-![image](/images/categories.PNG)
+**Slots**
 
-Labels allow tagging of content to display the type of content that is being consumed. For example, you might label content as videos or diagrams.
+Slots are the individual words we need to capture to determine the focus of the intent. 
+
+>While a customer might say they need to check their balance, we need to know what account they need to check their balance on. The account type in this example would be the slot.
+
+When constructing slots, you can provide synonyms to broaden the likelihood of capturing what the customer is referring to. 
+
+![image](/images/slots.PNG)
+
+**Tieing the component together**
+
+Within intents we can begin bringing together the slots and utterances we've constructed by highlighting words or phrases within your list of utterances and mapping slots to them.
+
+>Note: you can capture multiple slots within a single utterance. In the example below we highlight "monies" and set it to a slot type of Balance. We will then highlight "checking" and map it to account type
+
+![image](/images/slotHighLight.PNG)
+
+Once you have completed your slot mapping, you will see colored indicators of the key words within your utterance and what slots they will be filling
+
+![image](/images/slotmapping.PNG)

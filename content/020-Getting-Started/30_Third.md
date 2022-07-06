@@ -1,48 +1,25 @@
 ---
-title: "Bots"
+title: "Message Flows"
 chapter: false
 weight: 30
 ---
+With our Knowledgebase and Bot constructed, it is time to tie all of the work together with a simple message flow
+## Construct your Queue
+> Queues are logical groupings of agents for routing purposes, these are often paired with ACD skills for more refined interaction routing. The easiest way to differentiate queue's and ACD skills is to think of a Billing Queue as being the list of all of your agents that handle billing inquiries. Within that Queue you might have agents that speak spanish, or specialize in collections; ACD skills are tagged to individual interactions to ensure the customer is reaching the agent that most fits their needs (such as spanish).
 
-## Bot Flow Setup
+Within the main administration panel search for "queues" in the search bar and construct a new queue.
+No additional queue configuration is required, however you can add yourself to this queue in the members tab for later testing.
 
-Bot flows are the orchestrator of our self service offerings and are where we will tie our knowledgebase together with bot functionality.
+![image](/images/queueconstruction.PNG)
 
-Within Architect you will hover over flows and select Digital Bot Flow and Add. Using the same best practice of meaningful names and descriptions you will create a new Bot Flow
+## Construct your Flow
+Now that our queue has been constructed, we will navigate over to architect by searching for and selecting it from the administration panel
 
-![image](/images/botflowselect.PNG)
+Once in architect, ensure you are on the correct flow type of "Inbound Message", and select Add
 
-Bots are comprised of 2 primary components - 
-**Intents**
->Intents are ultimately what you are expecting your bot to be able to assist with, such as providing account information or loan information.
+![image](/images/SelectFlowType.PNG)
 
-When adding a new intent you will provide an intent name (such as accountInfo) and map it to a new or existing task
->Mapping to tasks allows you to break your bot into bite sized portions of functionality to simplify administration and readability. You can use a single task to manage all of your bot functionality if you prefer.
+Provide your flow a name and description that will be clear for future references, select your language and division. Error Event Transfer Queues are not required, however in the event of a logic failure they will allow customers to still reach an agent.
+>it is best practice to use meaningful names and descriptions to assist colleagues in easily finding and referencing the flow for future work or troubleshooting 
 
-![image](/images/addIntent.PNG)
-
-**Utterances**
-
-Utterances are what you're expecting a customer to say in order to get the information they need, one customer might say "what is my account balance?", while another might just say "Balance". The more utterances you provide, the more capable your bot will become at understanding what a customer is asking for.
-
-**Slots**
-
-Slots are the individual words we need to capture to determine the focus of the intent. 
-
->While a customer might say they need to check their balance, we need to know what account they need to check their balance on. The account type in this example would be the slot.
-
-When constructing slots, you can provide synonyms to broaden the likelihood of capturing what the customer is referring to. 
-
-![image](/images/slots.PNG)
-
-**Tieing the component together**
-
-Within intents we can begin bringing together the slots and utterances we've constructed by highlighting words or phrases within your list of utterances and mapping slots to them.
-
->Note: you can capture multiple slots within a single utterance. In the example below we highlight "monies" and set it to a slot type of Balance. We will then highlight "checking" and map it to account type
-
-![image](/images/slotHighLight.PNG)
-
-Once you have completed your slot mapping, you will see colored indicators of the key words within your utterance and what slots they will be filling
-
-![image](/images/slotmapping.PNG)
+![image](/images/CreateFlow.PNG)
