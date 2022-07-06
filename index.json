@@ -7,13 +7,6 @@
 	"content": "Genesys Workshop Welcome In this workshop we will discuss Genesys DX, what it is used for and how your customers could realize the true digital value. Genesys DX enables the ability to Create personalized experiences at scale, with a single solution that brings the best of artificial intelligence (AI) chatbots and human support together.\nLets Take this use case below as to how Genesys DX would become a true value add for your customers:\nACME corporation would like the ability to engage with customers, answer questions and enable self service without the need for telephony. In this instance, they are primarily interested in Digital channels such as email, SMS and chat. The Genesys DX product offering would enable ACME corporation to engage with their customer digitally, gain insights to their actitity and create dynamic reports on their interactions.\nNow that we understand the type of customer who would benefit from Genesys DX, we can walk through the different compnents of Genesys DX use cases and configurations to enable a modern digital channel experience\nLearning Objectives  Use Case 1: Chat and Chat Bots Use Case 2: Email Use Case 3: SMS  "
 },
 {
-	"uri": "/020-getting-started/10_first.html",
-	"title": "Chat and Chat Bots",
-	"tags": [],
-	"description": "",
-	"content": "Configure Workshop As the industry’s most tightly integrated support team and bot solution, Genesys DX uses AI to help your team be more effective and efficient, unburden employees from repetitive tasks, and provide seamless transitions from bots to live human support. It’s the best of both worlds.\nTying in the DX AI-powered knowledge bases enables you to build sophisticated knowledge that can be intelligently searched using APIs. In other words, you can author knowledge using the knowledge base so that it can be surfaced intelligently to customers via interaction with the bot flows.\nYou can create and maintain a knowledge base of questions and answers. When a user asks a question, Genesys DX AI looks for a similar question in the Knowledge Base. When a similar question is found, the corresponding answer is returned to the user. If the answer is not yet in the knowledge base yet, the user can escalate it to an agent via ticket or chat.\nIn this section we will be covering basic configurations of knowledge bases, chat and chat bots in the 3 following sections -\n Construct a Knowledge base Construct a Bot Flow Tie it all together with a Message Flow  "
-},
-{
 	"uri": "/030-use-case-2/10_first.html",
 	"title": "Email",
 	"tags": [],
@@ -21,11 +14,11 @@
 	"content": ""
 },
 {
-	"uri": "/040-use-case-2-copy/10_first.html",
-	"title": "SMS",
+	"uri": "/020-getting-started/10_first.html",
+	"title": "Knowledge bases, Support Center, and Smart advisor",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Knowledgebase Configuration Genesys DX knowledge base enables a knowledge author to create and manage knowledge, view knowledge performance, and provide feedback to train knowledge services. The knowledge base enhances the customer’s self-service experience and increases performance for agents who respond to customer inquiries.\nYou can create and maintain a knowledge base of questions and answers. When a user asks a question, Genesys DX AI looks for a similar question in the Knowledge Base. When a similar question is found, the corresponding answer is returned to the user. If the answer is not yet in the knowledge base yet, the user can escalate it to an agent via ticket or chat.\nTo create a new knowledge base, follow these steps:\n Click Admin. Under Knowledge, click Articles. Click the Knowledge Base list and then click Create Knowledge Base. Add a name and an optional description for the knowledge base. Select the language in which to gather knowledge content. Click Create. The knowledge base opens to the Knowledge Articles page.  With the knowledge base built, you can now add new question and answer articles, or you can import a previously configured .csv file to create a knowledge base. After you import the file, the system uses the information in the knowledge base to respond to questions. In this workshop we will cover manually adding a new article.\n Provide a question name Input content for the answer   Content is the actual response that the customer will receive if they provide a phrase that matches the article. These can be plain text or include videos and images\n Create a list of phrases   An article might provide an answer to numerous question, or there may be numerous ways to ask the question that the article may answer. Phrases allow you to configure the many possible ways a question answered by this article may be asked.\n Test the article   This will display the accuracy and actual responses a customer will get back depending on how they ask a question\n Categories and Labels Categories are used to group documents with similar content. For example, you could have a single category for documents that relate to home loans, another category for documents that relate to insurance policies, and so on. When you create documents, you can link them to one category. Where applicable you can also assign Parent Categories, allowing for more refined grouping of articles\nLabels allow tagging of content to display the type of content that is being consumed. For example, you might label content as videos or diagrams.\n"
 },
 {
 	"uri": "/010-introduction.html",
@@ -35,60 +28,46 @@
 	"content": "What is Genesys DX Introduction to DX Types of Channels Genesys DX optomizes and streamlines the ability to engage with customers or employees through digital channels such as email, SMS, and chat utilizing NLP and conversational AI (Artificial Intelligence) to provide a modern and effecient experience.\nGenesys DX provides value by: Bot and Service rep harmony\n Genesys DX bots aren’t just on the front lines helping customers find answers, place orders and fix problems 24/7 with a smile. They’re also working overtime behind the scenes advising service reps for better customer outcomes.  Conversational and Proactive AI\n It’s hard to decipher the reality from the hype around chatbots. There are demos galore of so-called conversational bots, but replicating those for your business typically requires a whole lot of data scientists and scripted responses. No thanks. Our bots are built for conversions from day one.  Knowledge and Insights\n The Genesys DX solution locks nothing away. Insights that are fueled by actual customer experiences are presented in real time, so you can take immediate action. And you don’t have to front-load your knowledge base with anticipated content. Genesys DX listens to customers to help you exceed their expectations.  Focus areas of DX are:  AI Chatbots Proactive AI Conversational AI Chat \u0026amp; Messaging Proactive chat Omnichannel engagement  "
 },
 {
-	"uri": "/030-use-case-2/20_second.html",
-	"title": "Configuration",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/040-use-case-2-copy/20_second.html",
-	"title": "Configuration",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "/020-getting-started/20_second.html",
-	"title": "Knowledge bases",
-	"tags": [],
-	"description": "",
-	"content": "Knowledgebase Configuration Genesys DX knowledge base enables a knowledge author to create and manage knowledge, view knowledge performance, and provide feedback to train knowledge services. The knowledge base enhances the customer’s self-service experience and increases performance for agents who respond to customer inquiries.\nYou can create and maintain a knowledge base of questions and answers. When a user asks a question, Genesys DX AI looks for a similar question in the Knowledge Base. When a similar question is found, the corresponding answer is returned to the user. If the answer is not yet in the knowledge base yet, the user can escalate it to an agent via ticket or chat.\nTo create a new knowledge base, follow these steps:\n Click Admin. Under Knowledge, click Articles. Click the Knowledge Base list and then click Create Knowledge Base. Add a name and an optional description for the knowledge base. Select the language in which to gather knowledge content. Click Create. The knowledge base opens to the Knowledge Articles page.  With the knowledge base built, you can now add new question and answer articles, or you can import a previously configured .csv file to create a knowledge base. After you import the file, the system uses the information in the knowledge base to respond to questions. In this workshop we will cover manually adding a new article.\n Provide a question name Input content for the answer   Content is the actual response that the customer will receive if they provide a phrase that matches the article. These can be plain text or include videos and images\n Create a list of phrases   An article might provide an answer to numerous question, or there may be numerous ways to ask the question that the article may answer. Phrases allow you to configure the many possible ways a question answered by this article may be asked.\n Test the article   This will display the accuracy and actual responses a customer will get back depending on how they ask a question\n Categories and Labels Categories are used to group documents with similar content. For example, you could have a single category for documents that relate to home loans, another category for documents that relate to insurance policies, and so on. When you create documents, you can link them to one category. Where applicable you can also assign Parent Categories, allowing for more refined grouping of articles\nLabels allow tagging of content to display the type of content that is being consumed. For example, you might label content as videos or diagrams.\n"
-},
-{
-	"uri": "/020-getting-started.html",
-	"title": "Use Case 1",
-	"tags": [],
-	"description": "",
-	"content": "Getting Started  Chat and Chat Bots   Knowledge bases   Bots   Message Flows   "
-},
-{
-	"uri": "/020-getting-started/30_third.html",
 	"title": "Bots",
 	"tags": [],
 	"description": "",
 	"content": "Bot Flow Setup Bot flows are the orchestrator of our self service offerings and are where we will tie our knowledgebase together with bot functionality.\nWithin Architect you will hover over flows and select Digital Bot Flow and Add. Using the same best practice of meaningful names and descriptions you will create a new Bot Flow\nBots are comprised of 2 primary components - Intents\n Intents are ultimately what you are expecting your bot to be able to assist with, such as providing account information or loan information.\n When adding a new intent you will provide an intent name (such as accountInfo) and map it to a new or existing task\n Mapping to tasks allows you to break your bot into bite sized portions of functionality to simplify administration and readability. You can use a single task to manage all of your bot functionality if you prefer.\n Utterances\nUtterances are what you\u0026rsquo;re expecting a customer to say in order to get the information they need, one customer might say \u0026ldquo;what is my account balance?\u0026rdquo;, while another might just say \u0026ldquo;Balance\u0026rdquo;. The more utterances you provide, the more capable your bot will become at understanding what a customer is asking for.\nSlots\nSlots are the individual words we need to capture to determine the focus of the intent.\n While a customer might say they need to check their balance, we need to know what account they need to check their balance on. The account type in this example would be the slot.\n When constructing slots, you can provide synonyms to broaden the likelihood of capturing what the customer is referring to.\nTieing the component together\nWithin intents we can begin bringing together the slots and utterances we\u0026rsquo;ve constructed by highlighting words or phrases within your list of utterances and mapping slots to them.\n Note: you can capture multiple slots within a single utterance. In the example below we highlight \u0026ldquo;monies\u0026rdquo; and set it to a slot type of Balance. We will then highlight \u0026ldquo;checking\u0026rdquo; and map it to account type\n Once you have completed your slot mapping, you will see colored indicators of the key words within your utterance and what slots they will be filling\n"
 },
 {
-	"uri": "/030-use-case-2.html",
-	"title": "Use Case 2",
+	"uri": "/030-use-case-2/20_second.html",
+	"title": "SMS",
 	"tags": [],
 	"description": "",
-	"content": "Getting Started  Email   Configuration   "
+	"content": ""
 },
 {
-	"uri": "/020-getting-started/40_fourth.html",
+	"uri": "/020-getting-started.html",
+	"title": "Use Case 1",
+	"tags": [],
+	"description": "",
+	"content": "Getting Started - Configuration Workshop As the industry’s most tightly integrated support team and bot solution, Genesys DX uses AI to help your team be more effective and efficient, unburden employees from repetitive tasks, and provide seamless transitions from bots to live human support. It’s the best of both worlds.\nTying in the DX AI-powered knowledge bases enables you to build sophisticated knowledge that can be intelligently searched using APIs. In other words, you can author knowledge using the knowledge base so that it can be surfaced intelligently to customers via interaction with the bot flows.\nYou can create and maintain a knowledge base of questions and answers. When a user asks a question, Genesys DX AI looks for a similar question in the Knowledge Base. When a similar question is found, the corresponding answer is returned to the user. If the answer is not yet in the knowledge base yet, the user can escalate it to an agent via ticket or chat.\nIn this section we will be covering basic configurations of knowledge bases, chat and chat bots in the 3 following sections: Constructing a Knowledge base, moving then to Construct a Bot Flow and tie everything together within a message flow 3. Tie it all together with a Message Flow\n Knowledge bases, Support Center, and Smart advisor   Bots   Message Flows   "
+},
+{
+	"uri": "/030-use-case-2/30_third.html",
+	"title": "Building on SMS and Email",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/020-getting-started/30_third.html",
 	"title": "Message Flows",
 	"tags": [],
 	"description": "",
 	"content": "With our Knowledgebase and Bot constructed, it is time to tie all of the work together with a simple message flow\nConstruct your Queue  Queues are logical groupings of agents for routing purposes, these are often paired with ACD skills for more refined interaction routing. The easiest way to differentiate queue\u0026rsquo;s and ACD skills is to think of a Billing Queue as being the list of all of your agents that handle billing inquiries. Within that Queue you might have agents that speak spanish, or specialize in collections; ACD skills are tagged to individual interactions to ensure the customer is reaching the agent that most fits their needs (such as spanish).\n Within the main administration panel search for \u0026ldquo;queues\u0026rdquo; in the search bar and construct a new queue. No additional queue configuration is required, however you can add yourself to this queue in the members tab for later testing.\nConstruct your Flow Now that our queue has been constructed, we will navigate over to architect by searching for and selecting it from the administration panel\nOnce in architect, ensure you are on the correct flow type of \u0026ldquo;Inbound Message\u0026rdquo;, and select Add\nProvide your flow a name and description that will be clear for future references, select your language and division. Error Event Transfer Queues are not required, however in the event of a logic failure they will allow customers to still reach an agent.\n it is best practice to use meaningful names and descriptions to assist colleagues in easily finding and referencing the flow for future work or troubleshooting\n "
 },
 {
-	"uri": "/040-use-case-2-copy.html",
-	"title": "Use Case 3",
+	"uri": "/030-use-case-2.html",
+	"title": "Use Case 2",
 	"tags": [],
 	"description": "",
-	"content": "Getting Started  SMS   Configuration   "
+	"content": "Getting Started with Email and SMS In this module of the DX workshop, we will be focusing our efforts on working together top build Email and SMS flows with logic. Many use cases todays require email and SMS as routing channels and can be utilized in a variety fo ways. In the world of DX, SMS could be used for\n Email   SMS   Building on SMS and Email   "
 },
 {
 	"uri": "/090-conclution.html",
